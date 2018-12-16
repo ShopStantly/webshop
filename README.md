@@ -13,5 +13,17 @@ Die folgenden Anforderung erfüllt das Projekt:
 
 ## Datenbank
 
+Webshop DB
+![alt Webshop DB](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/Order%20Management%20DB.png "Webshop DB")
+
+Payment DB
+![alt Payment DB](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/Payment%20DB.png "Payment DB")
+
+Inventory DB
+![alt Inventory DB](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/inventory%20db.png "Inventory DB")
+
+Shipping DB
+![alt Shipping DB](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/Shipping%20DB.png "Shipping DB")
+
 ## Microservices
 
