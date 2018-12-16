@@ -2,6 +2,7 @@ package com.webshop.WebShopstantly;
 
 import com.webshop.WebShopstantly.external.InventoryService;
 import com.webshop.WebShopstantly.external.PaymentService;
+import com.webshop.WebShopstantly.external.ShippingService;
 import com.webshop.WebShopstantly.internal.Article;
 import com.webshop.WebShopstantly.internal.ArticleService;
 import okhttp3.OkHttpClient;
@@ -30,6 +31,9 @@ public class WebshopController {
     @Autowired
     private InventoryService inventoryService;
 
+    @Autowired
+    private ShippingService shippingService;
+
     @RequestMapping(path = "", method = RequestMethod.GET)
     public ResponseEntity<String> orderProduct(@RequestBody String productToOrder) throws IOException {
         Integer articlePrice = articleService.getArticlePrice(productToOrder);
@@ -37,6 +41,7 @@ public class WebshopController {
         Integer balance = paymentService.getBalanceForUser();
 
         if (articlePrice < balance) {
+            shippingService.saveOrder();
             inventoryService.successfullyOrderdArticle(article);
             return new ResponseEntity<>("du darfst es kaufen!", HttpStatus.OK);
         } else {
