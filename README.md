@@ -83,6 +83,6 @@ Für den Shipping Microservice ist eine Tracking-ID und der aktuelle Status rele
 
 ![alt Shipping Tracking](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__shippingdb_tracking.png "Shipping Tracking")
 
-Zudem wird ein Benachrichtigung für die Auslieferung an einen Drittanbieter ausgelöst.
+Zudem wird eine Benachrichtigung für die Auslieferung an einen Drittanbieter ausgelöst.
 
 ![alt Benachrichtigung Auslieferung](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__shippingdb_syso.png "Benachrichtigung Auslieferung")
