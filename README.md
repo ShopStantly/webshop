@@ -16,7 +16,7 @@ Die folgenden Anforderung erfüllt das Projekt:
 * Jeder Microservice hat eine eigene Datenbank ([Demo Daten können hier heruntergeladen werden](https://github.com/ShopStantly/database))
 * REST-Implementation
 * Webshop
- * Der Benutzer kann einen Artikel bestellen, diese Bestellung wird automatisch an die nötigen Microservices kommuniziert. Jeder Microservice erhält nur die nötigen Informationen (Bspw. weiss das Payment System nicht, was genau bestellt wurde. Das Inventory System weiss nicht, wie viel ein Artikel kostet. Und das Shipping System weiss nicht, welche Artikel sich in einem Paket befinden.)
+  * Der Benutzer kann einen Artikel bestellen, diese Bestellung wird automatisch an die nötigen Microservices kommuniziert. Jeder Microservice erhält nur die nötigen Informationen (Bspw. weiss das Payment System nicht, was genau bestellt wurde. Das Inventory System weiss nicht, wie viel ein Artikel kostet. Und das Shipping System weiss nicht, welche Artikel sich in einem Paket befinden.)
 * Payment
   * Integration eines Drittanbieters für die Zahlungsabwicklung
   * Loyalty Punkte werden abgezogen
