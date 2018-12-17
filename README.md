@@ -55,11 +55,11 @@ Nachfolgend wird der Bestellprozess inkl. die Kommunikation mit den Microservice
 ### Webshop
 Weil der Benutzer via Google Assistent bestellt, gehen wir davon aus, dass die Benutzerauthentifizierung bereits durchgeführt wurde. In unserem Beispiel ist ein Benutzer namens "Hans" vorhanden. Er hat noch 12 Franken auf seinem Konto und verfügt über 233 Loyalty Punkte (z.B. Cumulus).
 
-![alt Datenbank User](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__paymentdb_hans.JPG "Datenbank User")
+![alt Datenbank User](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__paymentdb_hans.png "Datenbank User")
 
 In unserem Shop werden zwei Artikel geführt: Milch (2.-) und Müesli (5.-).
 
-![alt Datenbank Shop](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__shopdb_milkmuesli.JPG "Datenbank Shop").
+![alt Datenbank Shop](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__shopdb_milkmuesli.png "Datenbank Shop
 
 Wenn der Benutzer einen Artikel bestellt, wird überprüft, ob der Benutzer genug Geld auf seinem Konto hat. Falls ja wird der Bestellprozess fortgesetzt, ansonsten abgebrochen.
 
