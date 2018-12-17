@@ -59,7 +59,7 @@ Weil der Benutzer via Google Assistent bestellt, gehen wir davon aus, dass die B
 
 In unserem Shop werden zwei Artikel geführt: Milch (2.-) und Müesli (5.-).
 
-![alt Datenbank Shop](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__shopdb_milkmuesli.png "Datenbank Shop
+![alt Datenbank Shop](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__shopdb_milkmuesli.png "Datenbank Shop")
 
 Wenn der Benutzer einen Artikel bestellt, wird überprüft, ob der Benutzer genug Geld auf seinem Konto hat. Falls ja wird der Bestellprozess fortgesetzt, ansonsten abgebrochen.
 
@@ -69,7 +69,18 @@ Resultat ist entweder **200: Order was places successfully** oder **400: You do 
 Damit haben wir gezeigt, dass eine beidseitige Kommunikation (Anfragen und Empfangen) zwischen Shop und Payment Microservice funktioniert. 
 
 ### Payment
+Um verschiedene Fälle darzustellen haben wir implementiert, dass zwar der Kontostand überprüft wird aber die Rechnung noch nicht verbucht wird (bspw. wenn Rechnung aus irgend einem Grund später verbucht werden sollte). Dafür haben wir implementiert, dass pro Bestellung ein Loyalty Punkt abgezogen wird (je nach System macht es mehr Sinn, einen Punkt dazuzurechnen statt abzuziehen).
 
 ### Inventory
+Bei einer Bestellung wird der Lagerbestand um die bestellte Menge reduziert. In der Datenbank ist zusätzlich gespeichert, wo der Artikel liegt (für Rüstschein).
+
+![alt Datenbank Inventory](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__inventorydb_lager.png "Datenbank Inventory")
 
 ### Shipping
+Für den Shipping Microservice ist eine Tracking-ID und der aktuelle Status relevant (false = in Bearbeitung, true = ausgeliefert).
+
+![alt Shipping Tracking](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__shippingdb_tracking.png "Shipping Tracking")
+
+Zudem wird ein Benachrichtigung für die Auslieferung an einen Drittanbieter ausgelöst.
+
+![alt Benachrichtigung Auslieferung](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__shippingdb_syso.png "Benachrichtigung Auslieferung")
