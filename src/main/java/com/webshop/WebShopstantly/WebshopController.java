@@ -43,7 +43,7 @@ public class WebshopController {
         if (articlePrice < balance) {
             shippingService.saveOrder();
             inventoryService.successfullyOrderdArticle(article);
-            return new ResponseEntity<>("du darfst es kaufen!", HttpStatus.OK);
+            return new ResponseEntity<>("Order was placed successfully!", HttpStatus.OK);
         } else {
             return new ResponseEntity<>("You do not have enough balance!", HttpStatus.BAD_REQUEST);
         }
