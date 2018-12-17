@@ -73,9 +73,13 @@ Um verschiedene Fälle darzustellen haben wir implementiert, dass zwar der Konto
 Um zu zeigen, dass der Kontostand tatsächlich vom Webshop abgerufen wird, kann auch eine Abfrage mittels Postman erstellt werden: *http://localhost:8081/user/balance mit Body "hans" gibt den aktuellen Kontostand (12.-) aus.*
 
 ### Inventory
-Bei einer Bestellung wird der Lagerbestand um die bestellte Menge reduziert. In der Datenbank ist zusätzlich gespeichert, wo der Artikel liegt (für Rüstschein).
+Bei einer Bestellung wird der Lagerbestand um die bestellte Menge reduziert. 
 
 ![alt Datenbank Inventory](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__inventorydb_lager.png "Datenbank Inventory")
+
+Zusätzlich wird ein Rüstschein (packing slip) generiert, welcher die Informationen für einen Kommissionierer bereit stellt. Der Rüstschein wird als .txt-Datei in den Hauptpfad vom Inventory-System gespeichert.
+
+![alt Packing Slip](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__inventorydb_packingslip.png "Packing Slip")
 
 ### Shipping
 Für den Shipping Microservice ist eine Tracking-ID und der aktuelle Status relevant (false = in Bearbeitung, true = ausgeliefert).
