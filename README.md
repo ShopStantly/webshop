@@ -64,7 +64,9 @@ In unserem Shop werden zwei Artikel geführt: Milch (2.-) und Müesli (5.-).
 Wenn der Benutzer einen Artikel bestellt, wird überprüft, ob der Benutzer genug Geld auf seinem Konto hat. Falls ja wird der Bestellprozess fortgesetzt, ansonsten abgebrochen.
 
 *Bestellung auslösen mittels Postman: http://localhost:8080/ mit Body "milk" oder "muesli"*
-Resultat ist entweder **200: Order was places successfully** oder **400: You do not have enough balance**.
+Resultat ist entweder
+**200: Order was places successfully** oder
+**400: You do not have enough balance**.
 
 Damit haben wir gezeigt, dass eine beidseitige Kommunikation (Anfragen und Empfangen) zwischen Shop und Payment Microservice funktioniert. 
 
