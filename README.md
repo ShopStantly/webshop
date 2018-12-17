@@ -26,7 +26,7 @@ Das Projekt erfüllt die folgenden Anforderungen:
   * Generierung einer Tracking ID
 
 ## Virtual Assistant
-Prozess-Idee: https://app.botsociety.io/s/5bb1e265a8bf6f12d88d99a8?p=c2f3ae740e93264b775fd5f502966cf4e90290ff
+Unsere ursprüngliche Idee zum Ablauf haben wir mittels Botsociety designt. Die Prozess-Idee ist hier zu finden: https://app.botsociety.io/s/5bb1e265a8bf6f12d88d99a8?p=c2f3ae740e93264b775fd5f502966cf4e90290ff
 
 ## Datenbank
 
