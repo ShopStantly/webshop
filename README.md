@@ -77,7 +77,7 @@ Bei einer Bestellung wird der Lagerbestand um die bestellte Menge reduziert.
 
 ![alt Datenbank Inventory](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__inventorydb_lager.png "Datenbank Inventory")
 
-Zusätzlich wird ein Rüstschein (packing slip) generiert, welcher die Informationen für einen Kommissionierer bereit stellt. Der Rüstschein wird als .txt-Datei in den Hauptpfad vom Inventory-System gespeichert.
+Zusätzlich wird ein Rüstschein (packing slip) generiert, welcher die Informationen für einen Kommissionierer im Lager bereit stellt. Der Rüstschein wird als .txt-Datei in den Hauptpfad vom Inventory-System gespeichert.
 
 ![alt Packing Slip](https://raw.githubusercontent.com/ShopStantly/webshop/master/assets/githubdoku__inventorydb_packingslip.png "Packing Slip")
 
