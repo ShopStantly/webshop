@@ -5,7 +5,7 @@ EAI-Projekt HS2018 | Vlado Repic | Severin Müller | Dokumentation
 
 ## Requirements
 Die folgenden Anforderung erfüllt das Projekt:
-* vier Microservices (Webshop, Payment, Inventory, Shipping)
+* vier Microservices ([Webshop](https://github.com/ShopStantly/webshop), [Payment](https://github.com/ShopStantly/payment), [Inventory](https://github.com/ShopStantly/inventory), [Shipping](https://github.com/ShopStantly/shipping))
 * isolierte Datenbank für jeden Microservice
 * REST-Implementation
 
