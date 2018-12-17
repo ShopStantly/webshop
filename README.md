@@ -73,6 +73,8 @@ Damit haben wir gezeigt, dass eine beidseitige Kommunikation (Anfragen und Empfa
 ### Payment
 Um verschiedene Fälle darzustellen haben wir implementiert, dass zwar der Kontostand überprüft wird aber die Rechnung noch nicht verbucht wird (bspw. wenn Rechnung aus irgend einem Grund später verbucht werden sollte). Dafür haben wir implementiert, dass pro Bestellung ein Loyalty Punkt abgezogen wird (je nach System macht es mehr Sinn, einen Punkt dazuzurechnen statt abzuziehen).
 
+Um zu zeigen, dass der Kontostand tatsächlich vom Webshop abgerufen wird, kann auch eine Abfrage mittels Postman erstellt werden: *http://localhost:8081/user/balance mit Body "hans" gibt den aktuellen Kontostand (12.-) aus.*
+
 ### Inventory
 Bei einer Bestellung wird der Lagerbestand um die bestellte Menge reduziert. In der Datenbank ist zusätzlich gespeichert, wo der Artikel liegt (für Rüstschein).
 
