@@ -3,14 +3,11 @@ EAI-Projekt HS2018 | Vlado Repic | Severin Müller | Dokumentation
 
 ## Inhaltsverzeichnis
 * [Beschreibung und Projektziele](https://github.com/ShopStantly/webshop#beschreibung-und-projektziele)
-* [Requirements](https://github.com/ShopStantly/webshop#requirements)
 * [Virtual Assistant](https://github.com/ShopStantly/webshop#virtual-assistant)
 * [Datenbank](https://github.com/ShopStantly/webshop#datenbank)
 * [Microservices](https://github.com/ShopStantly/webshop#microservices)
 
 ## Beschreibung und Projektziele
-
-## Requirements
 Das Projekt erfüllt die folgenden Anforderungen:
 * Vier separate Microservices ([Webshop](https://github.com/ShopStantly/webshop), [Payment](https://github.com/ShopStantly/payment), [Inventory](https://github.com/ShopStantly/inventory), [Shipping](https://github.com/ShopStantly/shipping))
 * Jeder Microservice hat eine eigene Datenbank ([Demo Daten können hier heruntergeladen werden](https://github.com/ShopStantly/database))
